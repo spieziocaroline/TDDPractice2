@@ -4,6 +4,8 @@ export const getLetterCount = (str) => {
   letters.forEach((letter) => {
     if (!letterCount[letter]) {
       letterCount[letter] = 1;
+    } else {
+      letterCount[letter]++;
     }
   });
   return letterCount;

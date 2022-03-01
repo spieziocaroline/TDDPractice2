@@ -7,4 +7,9 @@ describe('isAnagram - basic functionality', () => {
     const actual = isAnagram('', '');
     expect(actual).to.equal(expected);
   });
+  it('returns false if both strings are different lengths', () => {
+    const expected = false;
+    const actual = isAnagram('hi', 'bye');
+    expect(actual).to.equal(expected);
+  });
 });

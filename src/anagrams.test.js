@@ -32,4 +32,9 @@ describe('isAnagram - basic functionality', () => {
     const actual = isAnagram('aracecare', 'eracecara');
     expect(actual).to.equal(expected);
   });
+  it('returns false if two words have the same letter but in different quantities', () => {
+    const expected = false;
+    const actual = isAnagram('aa', 'a');
+    expect(actual).to.equal(expected);
+  });
 });

@@ -37,4 +37,9 @@ describe('isAnagram - basic functionality', () => {
     const actual = isAnagram('aa', 'a');
     expect(actual).to.equal(expected);
   });
+  it('ignores case when considering characters', () => {
+    const expected = true;
+    const actual = isAnagram('CAfE', 'FacE');
+    expect(actual).to.equal(expected);
+  });
 });

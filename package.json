@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "npx mocha \"src/letter-count-test.js\" --recursive --require @babel/register"
+    "test": "npx mocha \"src/anagrams.test.js\" --recursive --require @babel/register"
   },
   "keywords": [],
   "author": "",
